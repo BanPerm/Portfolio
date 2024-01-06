@@ -1,0 +1,24 @@
+.body {
+    margin: 40px auto 20px;
+    padding: 20px;
+    width: 50vw;
+    font-family: 'Bangers', cursive;
+    position: relative;
+
+    border: solid black;
+    border-width: 3px 3px 5px 5px;
+    border-radius:4% 95% 6% 95%/95% 4% 92% 5%;
+    transform: rotate(-2deg);
+}
+
+.formation{
+    transform: rotate(2deg);
+}
+
+.formation h2,
+.formation p {
+    color: white;
+}
+
+
+

@@ -1,0 +1,33 @@
+.modal-text-container table {
+    width: 80%;
+    margin: auto;
+    table-layout: fixed;
+    border-spacing: 10px;
+}
+
+td:first-child {
+    width: 20%;
+    word-wrap: break-word;
+}
+
+td {
+    padding: 8px;
+    vertical-align: center;
+}
+
+strong {
+    margin-bottom: 10px;
+}
+
+@media (max-width: 1260px) {
+    td {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    td:first-child {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}

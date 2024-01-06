@@ -1,0 +1,65 @@
+:root{
+    --button-color-home: rgb(200, 106, 106);
+    --button-background-color-home: rgb(232, 200, 200);
+    --button-hover-color-home: rgb(232, 187, 187);
+
+    --button-color-submit: rgb(106, 163, 137);
+    --button-background-color-submit: rgb(205, 255, 232);
+    --button-hover-color-submit: rgb(187, 232, 211);
+    --font-family: 'EngageTypeFont', sans-serif;
+}
+
+.container {
+    max-width: 600px;
+    width: 50vw;
+    margin: 0 auto;
+}
+
+.form {
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.texteContact h1 {
+    text-align: center;
+}
+
+.inputContainer {
+    display: grid;
+    gap: 15px;
+
+}
+
+.inputWrapper {
+    position: relative;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 30px 30px 30px 15px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+textarea{
+    resize: vertical;
+}
+
+label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    transition: 0.3s;
+    pointer-events: none;
+}
+
+input.filled + label,
+textarea.filled + label {
+    top: 6px;
+    left: 5px;
+    font-size: 12px;
+}

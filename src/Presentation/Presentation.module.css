@@ -1,0 +1,49 @@
+@keyframes backgroundAnimation {
+    0% {
+        background-color: #61dafb; /* Couleur initiale */
+    }
+    50% {
+        background-color: #ff0000; /* Couleur à mi-chemin de l'animation */
+    }
+    100% {
+        background-color: #61dafb; /* Couleur finale */
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .divTexte h3 {
+        font-size: medium;
+    }
+}
+
+
+
+.div {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../../public/image/fire.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.divTexte {
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-direction: column; /* Permet la gestion de la hauteur en pourcentage */
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.divTexte h3,h1{
+    color: white;
+    text-shadow: 2px 2px 5px rgba(175, 0, 0, 10);
+    text-stroke: 2px black;
+}
+
+
+

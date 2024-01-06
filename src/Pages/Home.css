@@ -1,0 +1,12 @@
+.futureBottom {
+    font-size: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20px;
+}
+
+.futureBottom a {
+    padding-bottom: 20px;
+    margin-left: 10px;
+}
