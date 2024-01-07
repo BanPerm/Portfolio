@@ -13,7 +13,7 @@ const About = () => {
             <h1>About</h1>
             <ul className={styles.ul}>
                 <li className={styles.li}>
-                    <img src="/image/jeux-video.png" alt="jeux video" />
+                    <img src="/Porfolio/image/jeux-video.png" alt="jeux video" />
                     <p>
                         Fan de jeux vidéo depuis mon enfance, comme beaucoup d'autres, j'ai toujours cherché à approfondir mes connaissances, allant jusqu'à essayer de développer mes propres jeux. L'univers vidéoludique est bien plus qu'une simple passion pour moi ; c'est une source constante d'inspiration qui enrichit mon quotidien d'étudiant. La création de jeux devient ainsi un moyen captivant de fusionner ma curiosité technologique avec ma passion pour ceux-ci.
                     </p>
