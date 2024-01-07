@@ -45,7 +45,7 @@ const Contact = () => {
 
     return (
         <div className={style.container}>
-            <Link to="/">
+            <Link to="/Portfolio/">
                 <div style={{ position: 'absolute', top: '10px', left: '10px'}}>
                     <CustomButton
                         label="Accueil"

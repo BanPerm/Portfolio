@@ -7,8 +7,8 @@ import {Link} from "react-router-dom";
 const Future = () =>{
     return (
       <div>
-          <img src="/image/nofuture.jpg" className="imageFuture"/>
-          <Link to="/">
+          <img src="/Portfolio/image/nofuture.jpg" className="imageFuture"/>
+          <Link to="/Portfolio/">
           <div style={{ position: 'absolute', top: '10px', left: '10px'}}>
               <CustomButton
                   label="Accueil"

@@ -43,7 +43,7 @@ const Home = () => {
                             <Competence />
                             <Project />
                             <div className="futureBottom">
-                                <Link to="/future">...</Link>
+                                <Link to="/Portfolio/future">...</Link>
                             </div>
                         </div>
                     </main>

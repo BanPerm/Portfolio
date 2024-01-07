@@ -23,12 +23,12 @@ const Project = () => {
             key: uuid(),
             content: (
                 <Card
-                    image="./image/Project/Pygame.PNG"
+                    image="/Portfolio/image/Project/Pygame.PNG"
                     title={"Pygame Project"}
                     text={"Les jeux vidéo m'ont plongé dans le monde de la programmation. J'ai ainsi appris le langage Python et exploité la bibliothèque Pygame pour concevoir des jeux en 2D."}
                     onLearnMoreClick={() =>
                         openModal(
-                            "./image/Project/Pygame.PNG",
+                            "/Portfolio/image/Project/Pygame.PNG",
                             "Pygame Project",
                             <ModalText
                                 role="Dans mon rôle de programmeur de jeux, j'ai dû élargir mes compétences en apprenant la programmation, en m'initiant au pixel art, et en explorant des domaines variés tels que les mathématiques et la physique pour simuler certaines actions dans le jeu."
@@ -44,12 +44,12 @@ const Project = () => {
             key: uuid(),
             content: (
                 <Card
-                    image="./image/Project/AventurierRail.PNG"
+                    image="/Portfolio/image/Project/AventurierRail.PNG"
                     title={"Aventurier du Rail"}
                     text={"Ce projet est une implémentation du jeu de plateau aventurier du monde en format numérique, nous avons eu à créer la logique du jeu en java et l’interface en javafx."}
                     onLearnMoreClick={() =>
                         openModal(
-                            "./image/Project/AventurierRail.PNG",
+                            "/Portfolio/image/Project/AventurierRail.PNG",
                             "Aventurier du Rail",
                             <ModalText
                                 role="Au sein de ce projet, nous avons travaillé en binôme sur trois périodes distinctes. La première a été dédiée à la conception de la logique du jeu, la deuxième à l'optimisation, et la troisième à l'élaboration de l'interface graphique."
@@ -65,12 +65,12 @@ const Project = () => {
             key: uuid(),
             content: (
                 <Card
-                    image="./image/Project/NDI.PNG"
+                    image="/Portfolio/image/Project/NDI.PNG"
                     title={"Nuit de l'info"}
                     text={"La Nuit de l'info est un événement où nous avons codé un site en environ 15 heures avec une équipe de 9 personnes."}
                     onLearnMoreClick={() =>
                         openModal(
-                            "./image/Project/NDI.PNG",
+                            "/Portfolio/image/Project/NDI.PNG",
                             "Nuit de l'info",
                             <ModalText
                                 role="Lors de la création de ce site statique, ma principale responsabilité était de construire la page d'accueil, mais j'ai également participé à des défis comme celui de Noël."
@@ -86,12 +86,12 @@ const Project = () => {
             key: uuid(),
             content: (
                 <Card
-                    image="./image/Project/BD.jpg"
+                    image="/Portfolio/image/Project/BD.jpg"
                     title={"Gestion de données"}
                     text={"Dans le cadre d'une SAE, nous avons dû concevoir une base de données et y insérer des données une fois triées en partant d’un Excel."}
                     onLearnMoreClick={() =>
                         openModal(
-                            "./image/Project/BD.jpg",
+                            "/Portfolio/image/Project/BD.jpg",
                             "Gestion de données",
                             <ModalText
                                 role="Ma principale contribution a été sur la création du modèle entité-association, bien que j'aie participé de manière moindre à la création des scripts d'insertion et de tri des données."
@@ -107,12 +107,12 @@ const Project = () => {
             key: uuid(),
             content: (
                 <Card
-                    image="./image/Project/Stageo.PNG"
+                    image="/Portfolio/image/Project/Stageo.PNG"
                     title={"Stageo"}
                     text={"Dans le cadre d'une SAE, nous avons dû créer un site de gestion des stages et des alternances."}
                     onLearnMoreClick={() =>
                         openModal(
-                            "./image/Project/Stageo.PNG",
+                            "/Portfolio/image/Project/Stageo.PNG",
                             "Stageo",
                             <ModalText
                                 role="Suivant une approche de projet utilisant les méthodes agiles, j'ai participé à la création de la base de données, au backend avec PHP, ainsi qu'au frontend avec HTML, CSS et dans une moindre mesure, JavaScript."

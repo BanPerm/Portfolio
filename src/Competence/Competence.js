@@ -68,14 +68,14 @@ const Competence = () => {
             </div>
             <div className="scroller" data-direction="right" data-speed="slow">
                 <div className="scroller__inner">
-                    <img src="/image/langage/htmlpng.png" alt="" />
-                    <img src="/image/langage/CSS.svg" alt="" />
-                    <img src="/image/langage/tailwindcss.png" alt="" />
-                    <img src="/image/langage/PHP.png" alt="" />
-                    <img src="/image/langage/python.png" alt="" />
-                    <img src="/image/langage/c.png" alt="" />
-                    <img src="/image/langage/Java.png" alt="" />
-                    <img src="/image/langage/mysql.png" alt="" />
+                    <img src="/Portfolio/image/langage/htmlpng.png" alt="" />
+                    <img src="/Portfolio/image/langage/CSS.svg" alt="" />
+                    <img src="/Portfolio/image/langage/tailwindcss.png" alt="" />
+                    <img src="/Portfolio/image/langage/PHP.png" alt="" />
+                    <img src="/Portfolio/image/langage/python.png" alt="" />
+                    <img src="/Portfolio/image/langage/c.png" alt="" />
+                    <img src="/Portfolio/image/langage/Java.png" alt="" />
+                    <img src="/Portfolio/image/langage/mysql.png" alt="" />
                 </div>
             </div>
         </div>
