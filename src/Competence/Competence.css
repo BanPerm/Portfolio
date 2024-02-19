@@ -72,7 +72,6 @@ body {
     display: grid;
     min-block-size: 100vh;
     place-content: center;
-    font-family: system-ui;
     font-size: 1.125rem;
     background-color: rgb(23, 31, 44);
 }

@@ -6,8 +6,7 @@ const Presentation = () => {
             <div className={styles.divTexte}>
                 <h1>Bonjour, Je suis Peter Poirrier</h1>
                 <h3>
-                    Etudiant en deuxième année de BUT informatique, spécialisé en conception, développement, et validation d'application.
-                    Curieux de nature et persévérant, l'informatique représente pour moi une discipline à la fois stimulante et pleine de surprises
+                    Durant mes année de lycée, j'ai été attiré par le monde de la programmation, et cette passion m'a conduit à explorer de nombreux aspects de ce domaine par moi-même. Curieux, autonome et autodidacte, j'ai toujours été fasciné par les possibilités infinies offertes par cet univers
                 </h3>
             </div>
         </div>

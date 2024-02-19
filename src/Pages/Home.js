@@ -42,9 +42,6 @@ const Home = () => {
                             <About />
                             <Competence />
                             <Project />
-                            <div className="futureBottom">
-                                <Link to="/Portfolio/future">...</Link>
-                            </div>
                         </div>
                     </main>
                 </div>

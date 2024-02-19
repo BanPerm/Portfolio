@@ -1,7 +1,8 @@
 import React from "react";
 import "./ModalText.css";
+import Apprentissage from "./Apprentissage";
 
-const ModalText = ({ role, tech, goal }) => {
+const ModalText = ({ role, tech, goal, know}) => {
     return (
         <div className="modal-text-container">
             <table>
@@ -17,6 +18,10 @@ const ModalText = ({ role, tech, goal }) => {
                 <tr>
                     <td><strong>Objectif:</strong></td>
                     <td>{goal}</td>
+                </tr>
+                <tr>
+                    <td><strong>Apprentissage Critique:</strong></td>
+                    <td><Apprentissage list={know} /></td>
                 </tr>
                 </tbody>
             </table>

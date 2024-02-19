@@ -1,0 +1,25 @@
+.div{
+    min-width: 70%;
+    max-width: 70%;
+    margin: 20px auto auto;
+}
+
+.div div{
+    margin-bottom: 30px;
+    border: 2px solid #3a87ba;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.div div:hover {
+    transform: translateY(-2px);
+    transition: transform 0.2s ease-in-out;
+}
+
+.div div p{
+    margin-top: 0;
+}
+
+.div div h5{
+    margin-bottom: 5px;
+}
