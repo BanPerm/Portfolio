@@ -45,19 +45,6 @@ const Contact = () => {
 
     return (
         <div className={style.container}>
-            <Link to="/Portfolio/">
-                <div style={{ position: 'absolute', top: '10px', left: '10px'}}>
-                    <CustomButton
-                        label="Accueil"
-                        fontSize="1rem"
-                        color="rgb(50, 99, 162)"
-                        backgroundColor="rgb(108, 171, 255)"
-                        hoverColor="rgb(97, 160, 220)"
-                        boxShadowColor="rgb(68, 116, 180)"
-                        boxShadowHoverColor="rgb(51, 112, 159)"
-                    />
-                </div>
-            </Link>
             <form ref={form} onSubmit={sendEmail} className={style.form}>
                 <div className={style.texteContact}>
                     <h1>Me Contacter</h1>

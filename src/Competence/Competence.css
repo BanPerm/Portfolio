@@ -69,11 +69,24 @@ html {
 }
 
 body {
+    /*!!!!!!!!!!TODO: trouver le truc qui dépasse de mon site (pas le temps doit rendre le truc aujourd'hui)*/
+    overflow-x: hidden;
+    margin: 0;
     display: grid;
     min-block-size: 100vh;
     place-content: center;
     font-size: 1.125rem;
     background-color: rgb(23, 31, 44);
+}
+
+#root {
+    min-height: 100vh;
+    min-width: 100vw;
+    align-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
 
 .tag-list {

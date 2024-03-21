@@ -34,22 +34,22 @@ const NavbarDesktop = () => {
             <div className="menu">
                 <ul className="menuItem">
                     <li>
-                        <a href="#about">
+                        <Link to="/Portfolio#about">
                             <BiHomeAlt2 />
                             <span>About</span>
-                        </a>
+                        </Link>
                     </li>
                     <li>
-                        <a href="#experience">
+                        <Link to="/Portfolio#experience">
                             <FiInfo />
                             <span>Compétences</span>
-                        </a>
+                        </Link>
                     </li>
                     <li>
-                        <a href="#project">
+                        <Link to="/Portfolio#project">
                             <IoIosApps />
                             <span>Project</span>
-                        </a>
+                        </Link>
                     </li>
                     <li>
                         <Link to="/Portfolio/contact">

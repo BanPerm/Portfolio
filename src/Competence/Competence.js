@@ -56,6 +56,8 @@ const Competence = () => {
                 <ul className="tag-list scroller__inner">
                     <li>HTML</li>
                     <li>CSS</li>
+                    <li>React</li>
+                    <li>JavaScript</li>
                     <li>Tailwind</li>
                     <li>PHP</li>
                     <li>Python</li>
@@ -70,6 +72,8 @@ const Competence = () => {
                 <div className="scroller__inner">
                     <img src="/Portfolio/image/langage/htmlpng.png" alt="" />
                     <img src="/Portfolio/image/langage/CSS.svg" alt="" />
+                    <img src="/Portfolio/image/langage/js.png" alt="" />
+                    <img src="/Portfolio/image/langage/react.png" alt="" />
                     <img src="/Portfolio/image/langage/tailwindcss.png" alt="" />
                     <img src="/Portfolio/image/langage/PHP.png" alt="" />
                     <img src="/Portfolio/image/langage/python.png" alt="" />

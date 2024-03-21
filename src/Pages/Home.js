@@ -7,7 +7,6 @@ import Project from "../Project/Project";
 import './Home.css';
 
 import loadingGif from "../animation/Anim4.gif";
-import {Link} from "react-router-dom";
 
 const Home = () => {
     const [loading, setLoading] = useState(true);
@@ -25,28 +24,40 @@ const Home = () => {
         height: "200px",
     };
 
+    useEffect(() => {
+        if (!loading) {
+            const hash = window.location.hash;
+            if (hash) {
+                const element = document.querySelector(hash);
+                if (element) {
+                    element.scrollIntoView({ behavior: 'smooth' });
+                }
+            } else {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+        }
+    }, [loading]);
+
     return (
-        <div>
-            {loading ? (
-                <div className="loader-container">
-                    <img src={loadingGif} alt="Loading" style={gifStyles} />
-                </div>
-            ) : (
-                <div>
-                    <header>
-                        <Navbar />
-                    </header>
-                    <main>
-                        <div className="App">
-                            <Presentation />
-                            <About />
-                            <Competence />
-                            <Project />
-                        </div>
-                    </main>
-                </div>
-            )}
-        </div>
+        <>
+        {loading ? (
+            <div className="loader-container">
+                <img src={loadingGif} alt="Loading" style={gifStyles} />
+            </div>
+        ) : (
+            <>
+                <header></header>
+                <Navbar/>
+                <main>
+                    <Presentation />
+                    <About />
+                    <Competence />
+                    <Project />
+                </main>
+                <footer></footer>
+            </>
+        )}
+        </>
     );
 };
 

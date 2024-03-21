@@ -1,6 +1,6 @@
 // NavbarMobile.js
 import React, { useState, useRef } from 'react';
-import { NavLink } from 'react-router-dom';
+import {Link, NavLink} from 'react-router-dom';
 import { BiHomeAlt2 } from 'react-icons/bi';
 import { FiInfo } from 'react-icons/fi';
 import { IoIosApps } from 'react-icons/io';
@@ -22,25 +22,25 @@ const NavMobile = () => {
                 {isOpen && (
                     <ul className="menuItemMobile">
                         <li>
-                            <a href="#about">
+                            <Link to="/Portfolio#about">
                                 <BiHomeAlt2 />
                                 <span>About</span>
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a href="#experience">
+                            <Link to="/Portfolio#experience">
                                 <FiInfo />
                                 <span>Compétences</span>
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a href="#project">
+                            <Link to="/Portfolio#project">
                                 <IoIosApps />
                                 <span>Project</span>
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <NavLink to="/Portfolio/contact" activeClassName="active">
+                            <NavLink to="/Portfolio/contact">
                                 <AiOutlineMail />
                                 <span>Contact</span>
                             </NavLink>

@@ -22,8 +22,12 @@ const Navbar = () => {
         <>
             {isMobile ? <NavbarMobile /> : <NavbarDesktop />}
             <div style={{ position: 'fixed', top: 7, right: 10, padding: '10px', zIndex:101, display:"flex" }}>
-                <a href="https://www.linkedin.com/in/poirrierp/"><img src="/Portfolio/image/reseau/linkedin.png" style={{ width: '35px', height: '35px', marginRight:'10px' }} /></a>
-                <a href="https://github.com/BanPerm"><img src="/Portfolio/image/reseau/github.png" style={{ width: '35px', height: '35px' }} /></a>
+                <a href="https://www.linkedin.com/in/poirrierp/" target="_blank">
+                    <img src="/Portfolio/image/reseau/linkedin.png" style={{ width: '35px', height: '35px', marginRight:'10px' }} />
+                </a>
+                <a href="https://github.com/BanPerm" target="_blank">
+                    <img src="/Portfolio/image/reseau/github.png" style={{ width: '35px', height: '35px' }} />
+                </a>
             </div>
         </>
     );

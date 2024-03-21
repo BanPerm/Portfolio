@@ -1,14 +1,20 @@
-// Modal.jsx
-
-import React from "react";
+import React, { useRef } from "react";
 import PropTypes from "prop-types";
 import './Modal.css';
 import ModalText from "../ModalText/ModalText";
 
-const Modal = ({ image, title, role,tech,goal,know, onClose }) => {
+const Modal = ({ image, title, role, tech, goal, know, onClose }) => {
+    const modalRef = useRef(null);
+
+    const handleOutsideClick = (event) => {
+        if (modalRef.current && !modalRef.current.contains(event.target)) {
+            onClose();
+        }
+    };
+
     return (
-        <div className="modal">
-            <div className="modal-content">
+        <div className="modal" onClick={handleOutsideClick}>
+            <div className="modal-content" ref={modalRef}>
                 <span className="close" onClick={onClose}>
                     &times;
                 </span>
