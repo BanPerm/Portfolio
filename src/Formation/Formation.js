@@ -9,7 +9,7 @@ const Formation = () => {
                 </div>
                 <div className={style.formation}>
                     <h2>BUT Informatique</h2>
-                    <p>Actuellement en 2e année d'IUT Informatique, je me suis orienté vers la spécialité Conception d'Applications (RACDV).</p>
+                    <p>Actuellement en 3e année d'IUT Informatique, je me suis orienté vers la spécialité Conception d'Applications (RACDV).</p>
                 </div>
             </div>
         </div>
