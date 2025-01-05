@@ -2,10 +2,11 @@ import React, { useState, useEffect } from "react";
 import loadingGif from "../animation/Anim4.gif";
 import Future from "../Future/Future";
 
-import backgroundMusic from '../music/secret.mp3';  // Replace with the correct path
+import backgroundMusic from '../music/secret.mp3';  // Remplacer par le chemin correct
 
 const FuturePage = () => {
     const [loading, setLoading] = useState(true);
+    const [audioPlayed, setAudioPlayed] = useState(false);
 
     useEffect(() => {
         const fakeLoading = setTimeout(() => {
@@ -20,17 +21,30 @@ const FuturePage = () => {
         height: "200px",
     };
 
-    useEffect(() => {
-        if (!loading) {
+    const handlePlayMusic = () => {
+        if (!audioPlayed) {
             const audio = new Audio(backgroundMusic);
             audio.play();
+            setAudioPlayed(true);  // Musique déjà jouée
+        }
+    };
+
+    useEffect(() => {
+        if (!loading) {
+            const events = ['click', 'keydown', 'touchstart'];
+
+            const startAudio = () => {
+                handlePlayMusic();
+                events.forEach((event) => window.removeEventListener(event, startAudio));
+            };
+
+            events.forEach((event) => window.addEventListener(event, startAudio));
 
             return () => {
-                audio.pause();
-                audio.currentTime = 0;
+                events.forEach((event) => window.removeEventListener(event, startAudio));
             };
         }
-    }, [loading]);
+    }, [loading, audioPlayed]);
 
     return (
         <div>
@@ -47,6 +61,6 @@ const FuturePage = () => {
             )}
         </div>
     );
-}
+};
 
 export default FuturePage;
