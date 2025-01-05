@@ -45,6 +45,12 @@ const NavMobile = () => {
                                 <span>Contact</span>
                             </NavLink>
                         </li>
+                        <li>
+                            <Link to="/Portfolio/experience">
+                                <AiOutlineMail />
+                                <span>Experience</span>
+                            </Link>
+                        </li>
                     </ul>
                 )}
             </div>

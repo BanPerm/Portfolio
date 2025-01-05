@@ -1,0 +1,65 @@
+/* Conteneur principal */
+.experience-container {
+    padding: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+}
+
+/* Grille des cartes d'expérience */
+.experiences-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Grille responsive */
+    gap: 30px;
+}
+
+/* Style des cartes */
+.experience-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.experience-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Titre de chaque carte */
+.experience-card h2 {
+    font-size: 1.8rem;
+    color: #00796b;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+/* Détail du rôle et de la durée */
+.role-duration {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 15px;
+    font-weight: 400;
+}
+
+/* Animation subtile sur les cartes */
+.experience-card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.experience-card:hover::after {
+    opacity: 1;
+}

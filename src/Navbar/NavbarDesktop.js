@@ -57,6 +57,12 @@ const NavbarDesktop = () => {
                             <span>Contact</span>
                         </Link>
                     </li>
+                    <li>
+                        <Link to="/Portfolio/experience">
+                            <AiOutlineMail />
+                            <span>Experience</span>
+                        </Link>
+                    </li>
                 </ul>
             </div>
         </nav>
