@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Stage from "../StageExperience/StageExperience";
 
 import loadingGif from "../animation/Anim4.gif";
-import Navbar from "../Navbar/Navbar"; // Remplacez cela par le chemin correct de votre GIF
+import Navbar from "../Navbar/Navbar";
 
 const StagePage = () => {
     const [loading, setLoading] = useState(true);

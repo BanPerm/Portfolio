@@ -1,5 +1,37 @@
 import React from "react";
-import './StageExperience.module.css';
+import style from './StageExperience.module.css';
+
+const ExperienceCard = ({ experience }) => {
+    return (
+        <div className={style.experienceCard}>
+            <h2>{experience.company}</h2>
+            <p className={style.roleDuration}>{experience.role} - {experience.duration}</p>
+            <p>{experience.description}</p>
+            <h3>Technologies utilisées</h3>
+            <ul>
+                {experience.technologies.map((tech, index) => (
+                    <li key={index}>{tech}</li>
+                ))}
+            </ul>
+            <h3>Responsabilités principales</h3>
+            <ul>
+                {experience.tasks.map((task, index) => (
+                    <li key={index}>{task}</li>
+                ))}
+            </ul>
+            <h3>Objectifs du Stage</h3>
+            <p>{experience.objectives}</p>
+            <h3>Compétences acquises</h3>
+            <ul>
+                {experience.skills.map((skill, index) => (
+                    <li key={index}>{skill}</li>
+                ))}
+            </ul>
+            <h3>Bilan du Stage</h3>
+            <p>{experience.conclusion}</p>
+        </div>
+    );
+};
 
 const StageExperiencePage = () => {
     const experiences = [
@@ -8,56 +40,31 @@ const StageExperiencePage = () => {
             company: "Lundi Matin",
             role: "Développeur Logiciel",
             duration: "Stage de 6 mois",
-            description: "Développement d'applications web, optimisation des algorithmes, et gestion de projet agile.",
-            technologies: ["React.js", "Node.js", "C++", "Git"],
+            description: "Développement d'applications web, maintenance, et gestion de projet Agile au sein d'une équipe de 3 personnes.",
+            technologies: ["Vue.js", "PHP", "Tuleap"],
             tasks: [
-                "Développement d'applications web en React et Node.js",
-                "Optimisation de performances backend avec C++",
-                "Gestion du code source avec Git",
+                "Création de nouvelles pages, options et menus pour l'application web",
+                "Maintenance et gestion des tickets via Tuleap",
+                "Amélioration de fonctionnalités existantes, comme l'exportation en XML",
+                "Utilisation de Vue.js pour la conception front-end et PHP pour la gestion back-end",
             ],
-            objectives: "Renforcer les compétences full-stack et optimiser les processus de développement.",
+            objectives: "Renforcer les compétences en développement web full-stack et en gestion Agile au sein d'une équipe de petite taille.",
             skills: [
-                "Amélioration des compétences en React, Node.js et C++",
-                "Optimisation du temps d'exécution et gestion de la mémoire",
-                "Expérience avec la méthodologie Agile",
+                "Développement web avec Vue.js et PHP",
+                "Exposition aux méthodologies Agile (sprints, rapports quotidiens, et travail d'équipe)",
+                "Pratique de la gestion de tickets et du contrôle de version avec Tuleap",
+                "Amélioration des processus de développement avec de nouvelles fonctionnalités et l'optimisation de l'existant",
             ],
-            conclusion: "Stage enrichissant pour développer des compétences techniques et de gestion de projet.",
+            conclusion: "Ce stage a été une première expérience professionnelle en programmation qui m'a permis de renforcer mes compétences en développement web avec Vue.js et PHP, tout en découvrant le travail en équipe Agile dans un contexte réel.",
         },
     ];
 
     return (
-        <div className="experience-container">
+        <div className={style.container}>
             <h1>Mes Expériences de Stage</h1>
-
-            <div className="experiences-list">
+            <div className={style.experiencesList}>
                 {experiences.map((exp) => (
-                    <div className="experience-card" key={exp.id}>
-                        <h2>{exp.company}</h2>
-                        <p className="role-duration">{exp.role} - {exp.duration}</p>
-                        <p>{exp.description}</p>
-                        <h3>Technologies utilisées</h3>
-                        <ul>
-                            {exp.technologies.map((tech, index) => (
-                                <li key={index}>{tech}</li>
-                            ))}
-                        </ul>
-                        <h3>Responsabilités principales</h3>
-                        <ul>
-                            {exp.tasks.map((task, index) => (
-                                <li key={index}>{task}</li>
-                            ))}
-                        </ul>
-                        <h3>Objectifs du Stage</h3>
-                        <p>{exp.objectives}</p>
-                        <h3>Compétences acquises</h3>
-                        <ul>
-                            {exp.skills.map((skill, index) => (
-                                <li key={index}>{skill}</li>
-                            ))}
-                        </ul>
-                        <h3>Bilan du Stage</h3>
-                        <p>{exp.conclusion}</p>
-                    </div>
+                    <ExperienceCard key={exp.id} experience={exp} />
                 ))}
             </div>
         </div>

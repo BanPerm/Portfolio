@@ -5,6 +5,7 @@ import { BiHomeAlt2 } from 'react-icons/bi';
 import { FiInfo } from 'react-icons/fi';
 import { IoIosApps } from 'react-icons/io';
 import { AiOutlineMail } from 'react-icons/ai';
+import { FaBriefcase } from 'react-icons/fa';
 import './Navbar.css';
 
 const NavbarDesktop = () => {
@@ -59,7 +60,7 @@ const NavbarDesktop = () => {
                     </li>
                     <li>
                         <Link to="/Portfolio/experience">
-                            <AiOutlineMail />
+                            <FaBriefcase />
                             <span>Experience</span>
                         </Link>
                     </li>

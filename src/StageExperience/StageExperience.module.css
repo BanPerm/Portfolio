@@ -1,65 +1,99 @@
 /* Conteneur principal */
-.experience-container {
-    padding: 50px;
-    max-width: 1200px;
-    margin: 0 auto;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f4f7f6;
-}
-
-/* Grille des cartes d'expérience */
-.experiences-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Grille responsive */
-    gap: 30px;
-}
-
-/* Style des cartes */
-.experience-card {
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: 80px auto 20px auto;
     padding: 20px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    position: relative;
-    overflow: hidden;
+    box-sizing: border-box;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.experience-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-}
-
-/* Titre de chaque carte */
-.experience-card h2 {
-    font-size: 1.8rem;
-    color: #00796b;
-    margin-bottom: 10px;
-    font-weight: 500;
-}
-
-/* Détail du rôle et de la durée */
-.role-duration {
-    font-size: 1.1rem;
-    color: #555;
-    margin-bottom: 15px;
-    font-weight: 400;
-}
-
-/* Animation subtile sur les cartes */
-.experience-card::after {
-    content: '';
-    position: absolute;
+/* Navbar */
+.navbar {
+    position: fixed;
     top: 0;
-    left: 0;
     width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.05);
-    border-radius: 10px;
-    opacity: 0;
-    transition: opacity 0.3s ease;
+    height: 60px;
+    background-color: #121a26;
+    color: #e0e6ed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
 }
 
-.experience-card:hover::after {
-    opacity: 1;
+/* Titre principal */
+.title {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #e0e6ed;
+    text-align: center;
+}
+
+/* Liste des expériences */
+.experiencesList {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Carte d'expérience */
+.experienceCard {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    background-color: #2e3a4e;
+    border: 1px solid #3b4a61;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+}
+
+.experienceCard h3 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #e0e6ed;
+    margin: 0;
+    border-bottom: none;
+}
+
+.experienceCard h2 {
+    color: #f0f4f8;
+}
+
+.experienceCard p,
+.experienceCard ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    color: #b0becd;
+    font-size: 1rem;
+}
+
+.experienceCard ul li {
+    margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+    .experienceCard {
+        padding: 15px;
+    }
+
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .navbar {
+        font-size: 1.2rem;
+    }
 }

@@ -5,6 +5,7 @@ import { BiHomeAlt2 } from 'react-icons/bi';
 import { FiInfo } from 'react-icons/fi';
 import { IoIosApps } from 'react-icons/io';
 import { AiOutlineMail } from 'react-icons/ai';
+import { FaBriefcase } from 'react-icons/fa';
 import { useClickAway } from 'react-use';
 import { Squash as Hamburger } from 'hamburger-react';
 import './NavbarMobile.css';
@@ -47,7 +48,7 @@ const NavMobile = () => {
                         </li>
                         <li>
                             <Link to="/Portfolio/experience">
-                                <AiOutlineMail />
+                                <FaBriefcase />
                                 <span>Experience</span>
                             </Link>
                         </li>
