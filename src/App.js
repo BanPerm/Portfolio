@@ -6,6 +6,7 @@ import Home from "./Pages/Home";
 import ContactPage from "./Pages/ContactPage";
 import FuturePage from "./Pages/FuturePage";
 import StagePage from "./Pages/StagePage";
+import Apprentissage from "./Pages/Apprentissage";
 
 function ScrollToTop() {
     const { hash } = useLocation();
@@ -35,6 +36,7 @@ function App() {
                 <Route path="/Portfolio/contact" element={<ContactPage />} />
                 <Route path="/Portfolio/future" element={<FuturePage />} />
                 <Route path="/Portfolio/experience" element={<StagePage />} />
+                <Route path="/Portfolio/apprentissage" element={<Apprentissage />} />
             </Routes>
         </Router>
     );
