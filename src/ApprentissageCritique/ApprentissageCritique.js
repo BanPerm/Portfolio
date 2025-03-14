@@ -85,8 +85,8 @@ const ApprentissagesCritiquesPage = () => {
                         }
                     ],
                     "proof": [
-                        "/Portfolio/image/Project/Pygame.PNG",
-                        "/Portfolio/image/Project/Minimax_AlphaBeta_Integration.PNG"
+                        "/Portfolio/image/apprentissage/Minimax.PNG",
+                        "/Portfolio/image/apprentissage/Quiesence.PNG"
                     ]
                 },
                 {
@@ -106,8 +106,8 @@ const ApprentissagesCritiquesPage = () => {
                         }
                     ],
                     "proof": [
-                        "/Portfolio/image/Project/Code_Refactorisation.PNG",
-                        "/Portfolio/image/Project/Ergonomie_FrontEnd.PNG"
+                        "/Portfolio/image/apprentissage/documentation.PNG",
+                        "/Portfolio/image/apprentissage/testChesss.PNG"
                     ]
                 },
                 {
@@ -127,8 +127,8 @@ const ApprentissagesCritiquesPage = () => {
                         }
                     ],
                     "proof": [
-                        "/Portfolio/image/Project/UCI_Integration_Logs.PNG",
-                        "/Portfolio/image/Project/Performance_Tests_UCI.PNG"
+                        "/Portfolio/image/apprentissage/perfChess.PNG",
+                        "/Portfolio/image/apprentissage/UCI.PNG"
                     ]
                 }
             ]
@@ -153,37 +153,46 @@ const ApprentissagesCritiquesPage = () => {
                         }
                     ],
                     "proof": [
-                        "/Portfolio/image/Project/Pygame.PNG"
+                        "/Portfolio/image/apprentissage/Collaborate.PNG"
                     ]
                 },
                 {
                     "id": 5,
-                    "title": "AC 2 - Identifier les enjeux de l'économie de l'innovation numérique",
-                    "description": "J'ai analysé l'impact des algorithmes d'IA sur l'industrie du jeu en ligne, en évaluant leur compétitivité et en proposant des solutions adaptées aux besoins du marché.",
+                    "title": "AC 2 - Identifier les enjeux de l'économie de l''innovation numérique",
+                    "description": "J'ai mené une veille technologique approfondie sur trois domaines clés : l'industrie spatiale, les jeux vidéo et l'utilisation des données dans l'écologie. Cette analyse m'a permis de comprendre comment les innovations numériques influencent les modèles économiques et les stratégies dans ces secteurs.",
                     "paragraphes": [
                         {
-                            "title": "Analyse des enjeux économiques",
-                            "content": "L'innovation numérique transforme profondément les modèles économiques traditionnels, et l'IA n'échappe pas à cette règle. Dans le cadre de notre projet de développement d'un moteur d'échecs, j'ai analysé l'impact des algorithmes avancés sur l'industrie du jeu en ligne, particulièrement en termes de compétitivité et de réduction des coûts. La maîtrise de ces technologies nous permet de proposer un moteur d'échecs performant, capable de rivaliser avec des solutions commerciales existantes, tout en garantissant une meilleure accessibilité et une évolution rapide en réponse aux besoins des utilisateurs. Cette analyse économique m’a permis d'accompagner l'intégration des nouvelles technologies et des optimisations, garantissant que les choix techniques étaient alignés avec les besoins du marché et les objectifs économiques du projet.",
+                            "title": "Analyse des enjeux économiques dans l'industrie spatiale",
+                            "content": "L'essor des technologies numériques a transformé l'industrie spatiale, notamment avec l'émergence d'entreprises privées comme SpaceX. Ces innovations ont permis de réduire les coûts de lancement et d'accélérer les cycles de production, rendant l'exploration spatiale plus accessible et compétitive.",
+                            "CE": "CE6.02 | En accompagnant la mise en œuvre des évolutions informatiques"
+                        },
+                        {
+                            "title": "Impact des technologies IA dans les jeux vidéo",
+                            "content": "L'intégration de l'intelligence artificielle dans les jeux vidéo a révolutionné l'expérience utilisateur. Par exemple, des jeux comme 'Terra Nil' utilisent des algorithmes avancés pour offrir des environnements dynamiques et interactifs, influençant les modèles économiques des studios de développement.",
+                            "CE": "CE6.02 | En accompagnant la mise en œuvre des évolutions informatiques"
+                        },
+                        {
+                            "title": "Utilisation des big data dans l'écologie",
+                            "content": "L'exploitation des big data dans le domaine de l'écologie permet aux entreprises d'optimiser leurs processus tout en réduisant leur empreinte carbone. Cette approche favorise des décisions stratégiques éclairées et une conformité accrue aux réglementations environnementales.",
                             "CE": "CE6.02 | En accompagnant la mise en œuvre des évolutions informatiques"
                         }
                     ],
                     "proof": [
-                        "/Portfolio/image/Project/Pygame.PNG"
                     ]
                 },
                 {
-                    id: 6,
-                    title: "AC 3 - Guider la conduite du changement informatique",
-                    description: "J'ai participé à l'accompagnement du changement lors de la migration vers le nouveau moteur, en documentant les nouvelles fonctionnalités et en formant l'équipe aux nouveaux outils.",
+                    "id": 6,
+                    "title": "AC 3 - Guider la conduite du changement informatique",
+                    "description": "J'ai facilité l'adoption de l'outil de gestion de projet Correlate au sein de notre équipe, en assurant une transition fluide vers ce nouvel environnement de travail collaboratif.",
                     "paragraphes": [
                         {
-                            "title": "Accompagnement de la transition technique",
-                            "content": "Lors de la migration vers le nouveau moteur d'échecs, j'ai activement participé à l'accompagnement du changement. Cela comprenait la rédaction de la documentation technique sur les nouvelles fonctionnalités, la formation de l'équipe aux outils mis à jour, ainsi que la gestion des retours utilisateurs pour améliorer en continu le système. Cette transition a permis à l'équipe de s'adapter rapidement aux nouvelles pratiques et d’assurer une meilleure efficacité dans le développement. Afin de garantir une adoption réussie du changement au sein de l'équipe, nous avons organisé des réunions régulières pour discuter des mises à jour, des nouveaux objectifs et des ajustements nécessaires. Ces échanges ont permis de maintenir une bonne communication et ont facilité la gestion des résistances au changement. Grâce à cette approche collaborative, la transition s'est déroulée de manière fluide et l'adhésion de l'équipe a été renforcée.",
+                            "title": "Onboarding et formation à Correlate",
+                            "content": "Pour assurer une prise en main efficace de Correlate, j'ai organisé des sessions de formation et créé des guides d'utilisation détaillés. Ces initiatives ont permis à l'équipe de s'adapter rapidement à l'outil, améliorant ainsi notre collaboration et notre productivité.",
                             "CE": "CE6.02 | En accompagnant la mise en œuvre des évolutions informatiques"
                         }
                     ],
                     "proof": [
-                        "/Portfolio/image/Project/Pygame.PNG"
+                        "/Portfolio/image/apprentissage/correlate.PNG",
                     ]
                 },
                 {
@@ -198,7 +207,7 @@ const ApprentissagesCritiquesPage = () => {
                         }
                     ],
                     proof: [
-                        "/Portfolio/image/Project/Pygame.PNG"
+                        "/Portfolio/image/apprentissage/Agile.PNG"
                     ]
                 }
             ]
@@ -223,8 +232,7 @@ const ApprentissagesCritiquesPage = () => {
                         }
                     ],
                     "proof": [
-                        "/Portfolio/image/Project/Perf_Analysis.PNG",
-                        "/Portfolio/image/Project/Vector_vs_Array_Comparison.PNG"
+                        "/Portfolio/image/apprentissage/BEnchmark.PNG",
                     ]
                 },
                 {
@@ -244,8 +252,7 @@ const ApprentissagesCritiquesPage = () => {
                         }
                     ],
                     "proof": [
-                        "/Portfolio/image/Project/Perf_Optimization.PNG",
-                        "/Portfolio/image/Project/Transposition_Tables_Impact.PNG"
+                        "/Portfolio/image/apprentissage/comparePerf.PNG",
                     ]
                 },
                 {
@@ -265,8 +272,9 @@ const ApprentissagesCritiquesPage = () => {
                         }
                     ],
                     "proof": [
-                        "/Portfolio/image/Project/MVV_LVA_Integration.PNG",
-                        "/Portfolio/image/Project/Pygame.PNG"
+                        "/Portfolio/image/apprentissage/transposition.PNG",
+                        "/Portfolio/image/apprentissage/MVV_LVA.PNG",
+                        "/Portfolio/image/apprentissage/perfTableTranspo.PNG"
                     ]
                 }
             ]
